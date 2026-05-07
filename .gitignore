@@ -1,0 +1,55 @@
+# ─────────────────────────────────────────────
+# MATLAB / Simulink
+# ─────────────────────────────────────────────
+*.asv                   # Auto-save files
+*.m~                    # Backup files
+slprj/                  # Simulink project build artifacts
+codegen/                # Legacy codegen folder
+*.mex*                  # MEX binaries (all platforms)
+*.mexw64
+*.mexmaci64
+*.mexa64
+
+# Simulink generated code (keep generated_code/ folder tracked,
+# but ignore intermediate build artifacts inside it)
+generated_code/**/*_ert_rtw/
+
+# Simulink cache & temp files
+*.slxc                  # Simulink cache
+*.autosave              # Simulink autosave
+*.sfx                   # Stateflow export
+*.bak
+
+# MATLAB figure cache
+*.fig.bak
+
+# Simulation data (raw .mat output — large binary, track selectively)
+results/workspace_data/*.mat
+
+# ─────────────────────────────────────────────
+# OS
+# ─────────────────────────────────────────────
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# ─────────────────────────────────────────────
+# Editors
+# ─────────────────────────────────────────────
+.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# ─────────────────────────────────────────────
+# Reports — keep source, ignore compiled PDFs
+# (comment out if you want to track PDFs)
+# ─────────────────────────────────────────────
+# reports/**/*.pdf
+
+# ─────────────────────────────────────────────
+# Credentials / secrets — never commit
+# ─────────────────────────────────────────────
+.env
+*.key
+secrets.m
